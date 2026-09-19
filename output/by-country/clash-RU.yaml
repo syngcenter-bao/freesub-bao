@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.48.32
+  server: 172.64.154.8
   port: 2095
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: msk.frkn.org
   port: 443
@@ -39,18 +39,54 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: xssite.webredirect.org
-  port: 443
+  server: 104.245.240.8
+  port: 8443
   udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: bb20d3fc-fc15-0935-11c5-82775c39e6b0
   tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
+  reality-opts:
+    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
+  servername: www.epson.com
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-ru
+    grpc-service-name: TunService
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 130.49.189.158
+  port: 45433
+  udp: true
+  type: vless
+  uuid: 4ea67585-c211-4358-9173-cbdff7a6aede
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
+    short-id: 5e101cd5
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  server: 134.0.112.71
+  port: 17517
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +97,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +111,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 rules:
 - MATCH,PROXIES

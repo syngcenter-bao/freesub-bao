@@ -15,7 +15,7 @@ proxies:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
     short-id: 72ccd4a7563c2953
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
@@ -26,21 +26,8 @@ proxies:
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: estomin1.vodniki.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: estomin1.vodniki.monster
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -50,6 +37,20 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 5.101.115.117
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /magnet/thread?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: tishina-axe.dedyn.io
   port: 8443

@@ -14,6 +14,24 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.186
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 153.76.185.188
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -24,7 +42,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +50,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +59,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-      "server": "g2.haxat.bestvbest.ir",
-      "server_port": 20610,
-      "uuid": "8ec5d86b-d895-477d-bc96-21fa01049f2f",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "3e956106-7f92-4cbf-bf77-715d3890fa84",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-apple.com",
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI",
-          "short_id": "1d1a8f9fefeff5e6"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

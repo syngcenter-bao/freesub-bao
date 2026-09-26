@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "116.204.164.17",
+      "server": "116.204.164.30",
       "server_port": 7443,
-      "uuid": "ef8907eb-8bb5-4735-80f2-1d0068500d95",
+      "uuid": "d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f",
       "tls": {
         "enabled": true,
         "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
@@ -29,9 +29,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
-      "server": "109.120.155.155",
-      "server_port": 444,
-      "uuid": "99ab6748-3d57-4562-9451-843c15960b9b",
+      "server": "116.204.164.60",
+      "server_port": 7443,
+      "uuid": "c676be7d-b481-4bba-88d0-65855e09dc67",
       "tls": {
         "enabled": true,
         "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",

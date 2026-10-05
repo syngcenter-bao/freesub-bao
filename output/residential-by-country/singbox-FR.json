@@ -4,15 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.250.84.25",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 01 (家宽) - xiaohe",
+      "server": "104.18.47.113",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
@@ -20,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

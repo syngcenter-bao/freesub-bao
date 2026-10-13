@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 94.158.219.126
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 94.158.219.126
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: app-stw-129.ecom-ai-solutions.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 090da6a8-69f7-4b49-8af9-a8f8bfb07f17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gMa9oEtHaXgDr4h7DCJgHkFrWlwIhreQDMu73TWg-QI
+    short-id: a4d098efe4a9ff4e
+  servername: assets-stw-129.ecom-ai-solutions.com
+  client-fingerprint: randomized
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+rules:
+- MATCH,PROXIES

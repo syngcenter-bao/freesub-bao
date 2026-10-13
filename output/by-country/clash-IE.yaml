@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 54.72.130.222
+  server: 3.253.106.233
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: master-possum.rooster465.autos
   port: 443
@@ -19,23 +19,22 @@ proxies:
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  server: sacred-anemone.rooster465.autos
+  server: adapting-basilisk.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: sacred-anemone.rooster465.autos
+  sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  server: loved-shark.rooster465.autos
-  port: 443
+  server: ruot.ayucloudservices.nl
+  port: 21196
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 5af8b36d-14f6-44a3-ad02-c46acbbf47ba
 proxy-groups:
 - name: PROXIES
   type: select

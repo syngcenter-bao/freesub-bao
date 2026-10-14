@@ -28,8 +28,16 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "94.184.42.18",
+      "server_port": 8880,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AWVyUgWWLc4G47GNo_bx2w"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
       "server": "172.67.176.3",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
@@ -52,14 +60,6 @@
           "Host": "nimm.mpd.cc.cd"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "94.184.42.18",
-      "server_port": 8880,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AWVyUgWWLc4G47GNo_bx2w"
     },
     {
       "type": "selector",

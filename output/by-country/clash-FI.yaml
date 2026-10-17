@@ -29,16 +29,16 @@ proxies:
   servername: brointelengence.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: mci.amir12.ir
-  port: 2112
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

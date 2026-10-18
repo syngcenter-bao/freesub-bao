@@ -26,23 +26,9 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 154.46.31.106
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -56,8 +42,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +50,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 rules:
 - MATCH,PROXIES

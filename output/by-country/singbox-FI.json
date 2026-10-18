@@ -14,7 +14,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,35 +26,80 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "152.233.71.81",
-      "server_port": 443,
-      "uuid": "741809be-e44e-000b-b411-bf66f0ae3860",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "brointelengence.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-          "short_id": "1c3e8241a8743df9"
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "200.181.82.92",
-      "server_port": 21940,
-      "method": "aes-256-gcm",
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "46.62.204.134",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
       "server": "109.172.54.135",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -63,7 +108,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -84,7 +129,9 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
       ]
     },
     {
@@ -94,7 +141,9 @@
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

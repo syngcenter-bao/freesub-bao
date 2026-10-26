@@ -24,6 +24,7 @@ proxies:
   tls: true
   servername: th001.zestapp778.com
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: 104.16.10.2
   port: 443

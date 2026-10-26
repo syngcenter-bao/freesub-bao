@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "216.24.57.225",
-      "server_port": 2087,
-      "uuid": "825a76ef-053f-41eb-ba81-411e29494251",
+      "tag": "🇲🇰 MK 01 - xiaohe",
+      "server": "89.185.82.151",
+      "server_port": 10443,
+      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "busstop.zandix.ir",
-        "insecure": true,
+        "server_name": "stackoverflow.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wss",
-        "headers": {
-          "Host": "busstop.zandix.ir"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
+          "short_id": "6ba85179"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇲🇰 MK 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇲🇰 MK 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

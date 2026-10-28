@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "67.220.95.3",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
       "server": "45.63.30.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -25,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "51.161.204.242",
       "server_port": 443,
       "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
@@ -45,14 +37,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "au001.zestapp778.com",
-      "server_port": 35652,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "au.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "au001.zestapp778.com",
+        "server_name": "au.tronsg.com",
         "insecure": false
       }
     },
@@ -63,8 +55,7 @@
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -73,8 +64,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

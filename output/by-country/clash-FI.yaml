@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
+  server: 65.109.211.81
+  port: 465
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 65.109.210.221
   port: 465
@@ -31,20 +35,14 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.211.81
-  port: 465
+  server: mail.loyalsmile.net
+  port: 8080
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+    path: /wp-content3
 proxy-groups:
 - name: PROXIES
   type: select

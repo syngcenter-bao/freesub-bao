@@ -5,27 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 45.39.198.144
-  port: 9443
+  server: 206.237.11.17
+  port: 50376
   udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
@@ -33,30 +20,35 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
+  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 8.218.195.61
+  server: 165.154.63.139
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
-  servername: EX1oGt73NzPQKAc2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   server: 103.238.227.211
   port: 21003
@@ -82,7 +74,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  server: 103.238.227.211
+  server: 526.150333.xyz
   port: 21004
   udp: true
   type: vless
@@ -94,18 +86,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  server: 38.22.88.248
-  port: 27509
+  server: px2.5ibtc.cn
+  port: 443
   udp: true
   type: vless
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-  flow: xtls-rprx-vision
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
   tls: true
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  servername: www.suffolk.edu
-  client-fingerprint: firefox
+  servername: px2.5ibtc.cn
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
+    headers:
+      Host: px2.5ibtc.cn
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   server: 526.150333.xyz
   port: 21001
@@ -119,31 +113,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  server: 122.10.117.1
-  port: 11674
-  udp: true
-  type: vless
-  uuid: fe40f32a-b03d-4ada-8bee-00f41b766098
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs
-    short-id: d889b977
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  server: 165.154.63.139
+  server: 103.247.28.203
   port: 443
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
+  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -160,7 +143,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -177,6 +159,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
 rules:
 - MATCH,PROXIES

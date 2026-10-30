@@ -45,46 +45,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "pol.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "8z2OB_gvFvpKgjFi8s9Cvw"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
-      "server": "92.118.150.146",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,10 +52,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
@@ -105,10 +62,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

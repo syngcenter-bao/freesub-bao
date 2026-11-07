@@ -29,7 +29,7 @@ proxies:
     public-key: fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY
     short-id: e013fa99a81badcc
   servername: node-slo05.rkitman.ru
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

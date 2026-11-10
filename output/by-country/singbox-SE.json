@@ -12,12 +12,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
     },
     {
       "type": "vless",
@@ -36,12 +40,12 @@
     {
       "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "70.34.207.14",
+      "server": "95.143.196.97",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "server_name": "connect-se.mimowhat.online",
         "insecure": false
       }
     },
@@ -81,20 +85,8 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false
       }
     },
     {
@@ -107,8 +99,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ]
     },
     {
@@ -120,8 +111,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

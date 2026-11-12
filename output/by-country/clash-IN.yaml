@@ -15,7 +15,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 178.212.35.198
   port: 443
@@ -38,20 +38,20 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 85.234.100.32
+  server: 13.140.253.35
   port: 443
   udp: true
   type: vless
-  uuid: c1208c5a-2350-0003-affd-fc41b4319286
+  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
   tls: true
-  servername: decdn-28.nome-rkp.net
+  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /050334203cc522a3
     headers:
-      Host: decdn-28.nome-rkp.net
+      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   server: 152.67.8.205
   port: 80
@@ -63,21 +63,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  server: 13.140.253.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
-  tls: true
-  servername: xray-m0642ki4-silver-nebula-10.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /362b2b2c7197d648
-    headers:
-      Host: xray-m0642ki4-silver-nebula-10.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +73,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +83,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 rules:
 - MATCH,PROXIES

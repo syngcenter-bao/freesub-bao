@@ -5,34 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.155.222
+  server: cf.090227.xyz
   port: 443
   udp: true
-  type: vless
-  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /ws
     headers:
-      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.17.210.74
+  server: cf.090227.xyz
   port: 443
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: jp3.yohototo.top
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select

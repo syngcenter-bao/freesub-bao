@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 65.109.208.183
   port: 443
   udp: true
@@ -25,7 +14,7 @@ proxies:
   servername: free.for.member.iiproxy.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 169.40.34.41
   port: 443
   udp: true
@@ -45,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -34,12 +34,15 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-      "server": "123466.ru",
-      "server_port": 26032,
-      "uuid": "804334e2-04ca-434c-8311-3ccee8218175",
-      "security": "auto"
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "selector",
